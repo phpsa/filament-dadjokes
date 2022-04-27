@@ -10,6 +10,9 @@ class DadJokeWidget extends Widget
 {
     protected static string $view = 'filament-dadjokes::filament.widgets.dadjokes';
 
+     /**
+     * @return array<string, ?string>
+     */
     protected function getViewData(): array
     {
         return [
@@ -17,9 +20,8 @@ class DadJokeWidget extends Widget
         ];
     }
 
-    protected function getJoke()
+    protected function getJoke(): ?string
     {
-
         try {
             $json = Http::acceptJson()->get('https://icanhazdadjoke.com/')->throw()->json();
             return $json['joke'];
