@@ -16,6 +16,6 @@ class FilamentDadJokesProvider extends PluginServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package->name('filament-dadjokes')->hasViews();
+        $package->name('filament-dadjokes')->hasViews()->hasConfigFile();
     }
 }
