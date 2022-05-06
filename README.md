@@ -15,6 +15,15 @@ You can install the package via composer:
 composer require phpsa/filament-dadjokes
 ```
 
+## Config options
+```
+    'services' => [
+        'dad-jokes' => true,
+        'chuck-jokes' => false,
+    ],
+    'cache' => '5', //seconds
+```
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
