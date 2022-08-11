@@ -37,7 +37,7 @@ class DadJokeWidget extends Widget
     protected function dadJoke(): array
     {
         try {
-            $json = Http::acceptJson()->get('https://icanhazdadjoke.com/')->throw()->json();
+            $json = Http::acceptJson()->timeout(2)->get('https://icanhazdadjoke.com/')->throw()->json();
             return [
                 'joke'         => $json['joke'],
                 'provider_url' => 'https://icanhazdadjoke.com/',
@@ -53,7 +53,7 @@ class DadJokeWidget extends Widget
     protected function chuckJoke(): array
     {
         try {
-            $json = Http::acceptJson()->get('https://api.chucknorris.io/jokes/random')->throw()->json();
+            $json = Http::acceptJson()->timeout(2)->get('https://api.chucknorris.io/jokes/random')->throw()->json();
             return [
                 'joke'         => $json['value'],
                 'provider_url' => 'https://api.chucknorris.io',
