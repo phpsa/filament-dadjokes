@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/phpsa/filament-dadjokes/compare/v1.1.0...v1.1.1) (2022-08-11)
+
+
+### Bug Fixes
+
+* timeout to prevent long loading on dashboard ([9dabe22](https://github.com/phpsa/filament-dadjokes/commit/9dabe22563408bd30e74abbea01d056091803871))
+
 # [1.1.0](https://github.com/phpsa/filament-dadjokes/compare/v1.0.0...v1.1.0) (2022-05-06)
 
 
