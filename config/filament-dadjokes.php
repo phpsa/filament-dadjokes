@@ -2,8 +2,8 @@
 
 return [
     'services' => [
-        'dad-jokes' => true,
+        'dad-jokes'   => true,
         'chuck-jokes' => false,
     ],
-    'cache' => '5', //seconds
+    'cache'    => '5', //seconds
 ];

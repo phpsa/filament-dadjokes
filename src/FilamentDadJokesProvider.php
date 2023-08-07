@@ -2,11 +2,11 @@
 
 namespace Phpsa\FilamentDadJokes;
 
-use Filament\PluginServiceProvider;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Phpsa\FilamentDadJokes\Widgets\DadJokeWidget;
 
-class FilamentDadJokesProvider extends PluginServiceProvider
+class FilamentDadJokesProvider extends PackageServiceProvider
 {
     public static string $name = 'filament-dadjokes';
 
